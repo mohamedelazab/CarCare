@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/xml_curved_layout">
+
+    <TextView
+        android:id="@+id/tv_update_title"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignParentTop="true"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="@string/last_seen_agency"
+        android:background="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/img_header_agency_widget"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_below="@id/tv_update_title"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        android:tint="@color/greenFilter"
+        android:contentDescription="@string/header_image_widget" />
+
+    <ImageView
+        android:id="@+id/img_avatar_agency_widget"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/img_header_agency_widget"
+        android:layout_alignBottom="@+id/img_header_agency_widget"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginBottom="-23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_header_agency_widget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_header_agency_widget"
+        android:src="@drawable/bg2"
+        android:contentDescription="@string/avatar_image_widget" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/img_avatar_agency_widget"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_item_agency_name_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/dots"
+            android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/tv_item_agency_province_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/dots"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/tv_item_agency_city_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/dots"
+        android:textColor="@color/colorBlack" />
+
+
+    </LinearLayout>
+</RelativeLayout>

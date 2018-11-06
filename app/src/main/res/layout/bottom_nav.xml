@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <Button
+        android:id="@+id/btnMore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_more"
+        android:gravity="bottom|center"
+        android:layout_weight="1"
+        android:textSize="@dimen/font_size_12"
+        android:padding="5dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/more"/>
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_settings"
+        android:gravity="bottom|center"
+        android:layout_weight="1"
+        android:textSize="@dimen/font_size_12"
+        android:padding="5dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/settings"/>
+
+
+    <ImageView
+        android:id="@+id/btnSearch"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_my_search"
+        android:gravity="bottom|center"
+        android:layout_weight="1"
+        android:textSize="@dimen/font_size_12"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/search_for_agency" />
+
+    <Button
+        android:id="@+id/btnFavorites"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_fav"
+        android:gravity="bottom|center"
+        android:layout_weight="1"
+        android:textSize="@dimen/font_size_12"
+        android:padding="5dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/favorites"/>
+
+    <Button
+        android:id="@+id/btnMain"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_home"
+        android:gravity="bottom|center"
+        android:layout_weight="1"
+        android:textSize="@dimen/font_size_12"
+        android:padding="5dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/main"/>
+
+
+</LinearLayout>
