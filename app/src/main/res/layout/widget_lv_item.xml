@@ -7,18 +7,6 @@
     android:layout_marginBottom="8dp"
     android:background="@drawable/xml_curved_layout">
 
-    <TextView
-        android:id="@+id/tv_update_title"
-        android:padding="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        android:layout_alignParentTop="true"
-        android:text="@string/last_seen_agency"
-        android:background="@color/colorPrimary"/>
-
     <ImageView
         android:id="@+id/img_header_agency_widget"
         android:layout_width="match_parent"
